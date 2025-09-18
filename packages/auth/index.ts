@@ -1,3 +1,5 @@
+import "server-only";
+
 import { getSessionUser } from "./clerk";
 
 export interface User {

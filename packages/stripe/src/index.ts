@@ -1,3 +1,5 @@
+import "server-only";
+
 // @ts-ignore
 // @ts-nocheck
 import { Stripe } from "stripe";
