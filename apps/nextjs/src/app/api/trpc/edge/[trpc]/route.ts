@@ -5,11 +5,11 @@ import {createTRPCContext} from "@saasfly/api";
 import {edgeRouter} from "@saasfly/api/edge";
 import {getAuth} from "@clerk/nextjs/server";
 
-// export const runtime = "edge";
+export const runtime = "edge";
 const createContext = async (req: NextRequest) => {
     return createTRPCContext({
         headers: req.headers,
-        auth: getAuth(req),
+        auth: getAuth(req as any),
     });
 };
 
