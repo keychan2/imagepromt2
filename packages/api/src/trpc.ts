@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import {initTRPC, TRPCError} from "@trpc/server";
-import {auth, currentUser, getAuth} from "@clerk/nextjs/server";
+import { getAuth } from "@clerk/nextjs/server";
 import { ZodError } from "zod";
 
 import { transformer } from "./transformer";

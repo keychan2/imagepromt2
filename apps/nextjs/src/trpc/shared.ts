@@ -17,7 +17,7 @@ const getBaseUrl = () => {
   return `http://localhost:3000`;
 };
 
-const lambdas = ["auth", "customer"];
+const lambdas = ["auth", "customer", "k8s", "stripe"];
 
 export const endingLink = (opts?: {
   headers?: HTTPHeaders | (() => HTTPHeaders);
